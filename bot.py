@@ -45,4 +45,7 @@ async def match(ctx, winner: discord.Member, loser: discord.Member, score: str):
     await ctx.send(embed=embed)
 
 # تشغيل البوت بالتوكن الخاص بك (استبدل النص الذي بين القوسين بالتوكن الحقيقي)
-bot.run("MTU1MDI0MzE1ODMyNjEyMDQ2OQ.GbQQgM.GpGccjm9bNU9qtyXtq90FE0Vqf3Ke_2b9galQg")
+import os
+bot.run(os.environ.get("DISCORD_TOKEN"))
+
+
